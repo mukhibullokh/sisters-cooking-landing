@@ -173,6 +173,9 @@
   fbq('init', '1410608204369728');
   fbq('track', 'PageView');
 
+  // Turk reklamasidan kelganlar (?ch=turk) — botning Turk oshxonasi oqimiga
+  (function () { try { if (new URLSearchParams(location.search).get('ch') === 'turk') { var c = document.getElementById('cta'); if (c) c.href = 'https://t.me/SistersCookingBot?start=turk_site'; } } catch (e) {} })();
+
   document.getElementById('cta').addEventListener('click', function () {
     if (window.fbq) { fbq('track', 'Lead'); }
   });
