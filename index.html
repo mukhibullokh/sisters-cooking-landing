@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Sisters Cooking — 167 ta retsept: shirinliklar va Turk oshxonasi</title>
+<title>Sisters Cooking — 267 ta retsept: shirinliklar, Turk oshxonasi va PP</title>
 <meta name="description" content="Yopiq Telegram kanallar: 67 ta shirinlik va 100 ta Turk taomi retsepti. Grammigacha aniq o'lchov, har retseptda 5 ta bosqichma-bosqich rasm. 1 ta retsept bepul.">
-<meta property="og:title" content="Sisters Cooking — 167 ta retsept">
+<meta property="og:title" content="Sisters Cooking — 267 ta retsept">
 <meta property="og:description" content="Grammigacha aniq retseptlar, bosqichma-bosqich rasmlar bilan. 1 ta retsept bepul.">
 <meta property="og:image" content="img/hero-d.jpg">
 <meta name="theme-color" content="#2b1a12">
@@ -219,13 +219,14 @@ fbq('init','1410608204369728');fbq('track','PageView');
       </div>
       <div class="note">Telegram'da ochiladi · <b>ro'yxatdan o'tish shart emas</b></div>
       <div class="stats" style="margin:18px 0 0">
-        <div class="stat"><b>167</b><span>ta retsept</span></div>
+        <div class="stat"><b>267</b><span>ta retsept</span></div>
         <div class="stat"><b>5</b><span>bosqich rasm</span></div>
         <div class="stat"><b>50+</b><span>xaridor</span></div>
       </div>
     </div>
   </div>
 </section>
+<section style="padding:6px 0 0"><div class="wrap"><a href="pp.html" style="display:flex;align-items:center;gap:12px;background:#eaf5ec;border:1px solid #bfe0c8;border-radius:18px;padding:14px 16px;text-decoration:none;color:#1f5134"><span style="font-size:28px">🥗</span><span><b>Yangi: PP retseptlar — 100 ta glutensiz va shakarsiz retsept</b><br><span style="font-size:14px">To'g'ri ovqatlanish: taomlar, salatlar, shakarsiz shirinliklar va nonlar · 75 000 so'm →</span></span></a></div></section>
 
 <section>
   <div class="wrap">
@@ -336,6 +337,22 @@ fbq('init','1410608204369728');fbq('track','PageView');
         <a class="btn btn-red js-buy" data-p="turk" href="https://t.me/SistersCookingBot?start=pay_turk">Sotib olish — 39 000 so'm</a>
         <a class="free js-free" data-ch="turk" href="https://t.me/SistersCookingBot?start=turk_site">yoki avval 1 ta retseptni bepul ko'ring →</a>
       </div>
+      <div class="plan p-pp" style="border-color:#2f7a4b">
+        <div class="tag" style="background:#2f7a4b">YANGI · PP</div>
+        <h3>🥗 PP retseptlar</h3>
+        <div class="cnt">100 ta retsept · to'g'ri ovqatlanish</div>
+        <div class="price"><b>75 000</b><span>so'm</span></div>
+        <div class="per">Bitta retsept ≈ 750 so'm</div>
+        <ul>
+          <li>Hammasi glutensiz va shakarsiz</li>
+          <li>40 ta taom, 20 ta salat, 10 ta glutensiz non</li>
+          <li>30 ta shakarsiz shirinlik (18 tasi faqat eritrit/steviya bilan 🩺)</li>
+          <li>Har retseptda 5 ta bosqich rasm va manbasi</li>
+        </ul>
+        <a class="btn btn-red js-buy" data-p="pp" href="https://t.me/SistersCookingBot?start=pay_pp" style="background:#2f7a4b">Sotib olish — 75 000 so'm</a>
+        <a class="free js-free" data-ch="pp" href="https://t.me/SistersCookingBot?start=pp_site">yoki avval PP sirniki retseptini bepul oling →</a>
+        <a class="free" href="pp.html">PP kanali haqida batafsil →</a>
+      </div>
     </div>
     <div class="pay-logos"><span>Payme</span><span>Uzcard</span><span>Humo</span><span>Click / bank ilovasi orqali o'tkazma</span></div>
   </div>
@@ -412,7 +429,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
     a.addEventListener('click',function(){
       try{
         fbq('track','Lead');
-        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='turk'?39000:29000,currency:'UZS',content_name:p}); }
+        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='turk'?39000:p==='pp'?75000:29000,currency:'UZS',content_name:p}); }
       }catch(e){}
     });
   });
