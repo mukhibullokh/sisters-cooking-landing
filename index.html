@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Sisters Cooking — 267 ta retsept: shirinliklar, Turk oshxonasi va PP</title>
-<meta name="description" content="Yopiq Telegram kanallar: 67 ta shirinlik va 100 ta Turk taomi retsepti. Grammigacha aniq o'lchov, har retseptda 5 ta bosqichma-bosqich rasm. 1 ta retsept bepul.">
-<meta property="og:title" content="Sisters Cooking — 267 ta retsept">
+<title>Sisters Cooking — 367 ta retsept: shirinliklar, Turk oshxonasi, PP va O'zbek milliy taomlari</title>
+<meta name="description" content="Yopiq Telegram kanallar: 67 ta shirinlik, 100 ta Turk taomi, 100 ta PP va 100 ta O'zbek milliy taomi retsepti. Grammigacha aniq o'lchov, har retseptda 5 ta bosqichma-bosqich rasm. 1 ta retsept bepul.">
+<meta property="og:title" content="Sisters Cooking — 367 ta retsept">
 <meta property="og:description" content="Grammigacha aniq retseptlar, bosqichma-bosqich rasmlar bilan. 1 ta retsept bepul.">
 <meta property="og:image" content="img/hero-d.jpg">
 <meta name="theme-color" content="#2b1a12">
@@ -185,8 +185,9 @@ body.turk .p-turk{order:1}
   .sample{grid-template-columns:1fr 1.1fr;align-items:start}
   .grid{grid-template-columns:repeat(4,1fr);gap:14px}
   .lists{columns:2}
-  .plans{flex-direction:row}
-  .plan{flex:1}
+  .plans{flex-direction:row;flex-wrap:wrap}
+  .plan{flex:1 1 calc(50% - 8px)}
+  .plan.p-all4,.plan.p-all3{flex-basis:100%}
   .how{grid-template-columns:repeat(3,1fr)}
   .final{padding:50px}
 }
@@ -219,7 +220,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
       </div>
       <div class="note">Telegram'da ochiladi · <b>ro'yxatdan o'tish shart emas</b></div>
       <div class="stats" style="margin:18px 0 0">
-        <div class="stat"><b>267</b><span>ta retsept</span></div>
+        <div class="stat"><b>367</b><span>ta retsept</span></div>
         <div class="stat"><b>5</b><span>bosqich rasm</span></div>
         <div class="stat"><b>50+</b><span>xaridor</span></div>
       </div>
@@ -227,6 +228,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
   </div>
 </section>
 <section style="padding:6px 0 0"><div class="wrap"><a href="pp.html" style="display:flex;align-items:center;gap:12px;background:#eaf5ec;border:1px solid #bfe0c8;border-radius:18px;padding:14px 16px;text-decoration:none;color:#1f5134"><span style="font-size:28px">🥗</span><span><b>Yangi: PP retseptlar — 100 ta glutensiz va shakarsiz retsept</b><br><span style="font-size:14px">To'g'ri ovqatlanish: taomlar, salatlar, shakarsiz shirinliklar va nonlar · 75 000 so'm →</span></span></a></div></section>
+<section style="padding:10px 0 0"><div class="wrap"><a href="#p-uz" style="display:flex;align-items:center;gap:12px;background:#e8f1f8;border:1px solid #b9d3e6;border-radius:18px;padding:14px 16px;text-decoration:none;color:#164a6b"><span style="font-size:28px">🇺🇿</span><span><b>Yangi: O'zbek milliy taomlari — 100 ta retsept</b><br><span style="font-size:14px">Toshkent to'y oshi, Samarqand, Farg'ona, Buxoro va Xorazm oshlari, manti, somsa, chak-chak, patir · 65 000 so'm →</span></span></a></div></section>
 
 <section>
   <div class="wrap">
@@ -353,6 +355,30 @@ fbq('init','1410608204369728');fbq('track','PageView');
         <a class="free js-free" data-ch="pp" href="https://t.me/SistersCookingBot?start=pp_site">yoki avval PP sirniki retseptini bepul oling →</a>
         <a class="free" href="pp.html">PP kanali haqida batafsil →</a>
       </div>
+      <div class="plan p-uz" id="p-uz" style="border-color:#1c6e9c">
+        <div class="tag" style="background:#1c6e9c">YANGI · O'ZBEK</div>
+        <h3>🇺🇿 O'zbek milliy taomlari</h3>
+        <div class="cnt">100 ta retsept · milliy oshxona</div>
+        <div class="price"><b>65 000</b><span>so'm</span></div>
+        <div class="per">Bitta retsept ≈ 650 so'm</div>
+        <ul>
+          <li>50 ta taom: Toshkent to'y oshi, Samarqand, Farg'ona, Buxoro, Xorazm oshlari</li>
+          <li>Sho'rvalar, manti, chuchvara, lag'mon, somsa, kaboblar</li>
+          <li>20 ta salat va 20 ta shirinlik: chak-chak, holva, sumalak</li>
+          <li>10 ta non: patir, Samarqand noni · tandir taomlari uchun duxovka usuli</li>
+          <li>Grammigacha aniq, har retseptda 5 ta bosqich rasm</li>
+        </ul>
+        <a class="btn btn-red js-buy" data-p="uz" href="https://t.me/SistersCookingBot?start=pay_uz" style="background:#1c6e9c">Sotib olish — 65 000 so'm</a>
+        <a class="free js-free" data-ch="uz" href="https://t.me/SistersCookingBot?start=uz_site">yoki avval 1 ta retseptni bepul ko'ring →</a>
+      </div>
+      <div class="plan p-all4" style="grid-column:1/-1;border-color:#c9a227;background:linear-gradient(135deg,#fff8e6,#fff)">
+        <div class="tag" style="background:#c9a227">HAMMASI · 4 KANAL</div>
+        <h3>🎁 4 ta kanal birga</h3>
+        <div class="cnt">🍰 Shirinliklar + 🇹🇷 Turk oshxonasi + 🥗 PP + 🇺🇿 O'zbek milliy taomlari — 367 ta retsept</div>
+        <div class="price"><s>208 000</s><b>180 000</b><span>so'm</span></div>
+        <div class="per">Alohida 208 000 so'm — 28 000 so'm tejaysiz · bir marta to'laysiz</div>
+        <a class="btn btn-red js-buy" data-p="all4" href="https://t.me/SistersCookingBot?start=pay_all4" style="background:#a8841a">4 kanalni olish — 180 000 so'm</a>
+      </div>
       <div class="plan p-all3" style="grid-column:1/-1;border-color:#c9a227;background:linear-gradient(135deg,#fff8e6,#fff)">
         <div class="tag" style="background:#c9a227">ENG FOYDALI · 3 KANAL</div>
         <h3>🎁 3 ta kanal birga</h3>
@@ -388,7 +414,8 @@ fbq('init','1410608204369728');fbq('track','PageView');
       <details><summary>Bir marta to'laymanmi yoki har oy?</summary><p>Bir marta. Obuna emas — kanalga kirganingizdan keyin u umrbod sizniki.</p></details>
       <details><summary>Kanalga qachon kiraman?</summary><p>Payme orqali to'lasangiz — darhol, avtomatik. Karta orqali o'tkazsangiz — admin chekni tekshirgach, havola botga keladi.</p></details>
       <details><summary>Kirill yozuvida o'qisa bo'ladimi?</summary><p>Bot kirill va lotin yozuvida ishlaydi — "Кириллча ⇄ Lotincha" tugmasi bilan almashtirasiz. Kanaldagi retseptlar lotin yozuvida.</p></details>
-      <details><summary>Rasmlar haqiqiymi?</summary><p>Retseptlar va masalliqlar haqiqiy. Taomlar rasmlari retsept asosida AI yordamida tayyorlangan — tayyor taom qanday ko'rinishini ko'rsatish uchun.</p></details>
+      <details><summary>Uyda tandir bo'lmasa, tandir taomlarini qilsa bo'ladimi?</summary><p>Ha. O'zbek milliy taomlari kanalida somsa, patir, Samarqand noni kabi tandir taomlari uchun oddiy duxovkada pishirish usuli ham yozilgan: harorat, vaqt va qaysi tokchada pishirish.</p></details>
+      <details><summary>Rasmlar haqiqiymi?</summary><p>Retseptlar va masalliqlar haqiqiy. Barcha 4 ta kanalda (shu jumladan O'zbek milliy taomlari) taomlar rasmlari retsept asosida AI yordamida tayyorlangan — tayyor taom qanday ko'rinishini ko'rsatish uchun.</p></details>
       <details><summary>Savolim bo'lsa kimga yozaman?</summary><p>Botning o'ziga yozing — xabaringiz adminga yetadi va javob beramiz.</p></details>
     </div>
   </div>
@@ -437,7 +464,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
     a.addEventListener('click',function(){
       try{
         fbq('track','Lead');
-        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='all3'?119000:p==='turk'?39000:p==='pp'?75000:29000,currency:'UZS',content_name:p}); }
+        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='all4'?180000:p==='all3'?119000:p==='uz'?65000:p==='turk'?39000:p==='pp'?75000:29000,currency:'UZS',content_name:p}); }
       }catch(e){}
     });
   });
