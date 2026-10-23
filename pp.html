@@ -48,7 +48,7 @@ section{padding:56px 0}
 .hero{padding:0;position:relative}
 .hero-in{display:grid;gap:0}
 .hero-img{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--line);overflow:hidden}
-.hero-img img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.hero-img img{width:100%;height:auto;aspect-ratio:1/0.8;object-fit:cover}
 .hero-img::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(to top,var(--cream),rgba(247,247,238,0));pointer-events:none}
 .hero-badge{position:absolute;top:14px;right:14px;z-index:2;width:108px;height:108px;border-radius:50%;background:#ffc93c;color:var(--cocoa);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1.05;transform:rotate(-10deg);box-shadow:0 8px 20px rgba(0,0,0,.18);border:4px solid #fff}
 .hero-badge b{display:block;font-size:22px}
@@ -131,7 +131,9 @@ footer a{color:var(--cocoa);font-weight:700}
 
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,250,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:8px;transform:translateY(110%);transition:transform .3s ease}
 .dock.on{transform:none}
+.trust{font-size:13px;color:var(--ink);opacity:.85;margin-top:8px;line-height:1.45;text-align:center}
 .dock .btn{padding:14px 8px;font-size:15px;border-radius:12px}
+.dock{grid-template-columns:1.6fr 1fr}
 
 @media (min-width:760px){
   body{padding-bottom:0}
@@ -178,7 +180,8 @@ fbq('init','1410608204369728');fbq('track','PageView');
         <a href="https://t.me/SistersCookingBot?start=pp_site" class="btn btn-red js-free" data-ch="pp">🎁 PP sirniki retseptini BEPUL olish</a>
         <a class="btn btn-ghost" href="#narx">Narxi va tarkibi ↓</a>
       </div>
-      <div class="note">Telegram'da ochiladi · <b>ro'yxatdan o'tish shart emas</b></div>
+      <div class="note">Telegram'da ochiladi · <b>ro'yxatdan o'tish shart emas</b> · to'lov Payme yoki Click</div>
+      <div class="trust">✅ <b>Retseptlar ishonchli manbalardan olingan</b><br><span style="font-size:12px">Rasmlar retsept asosida sun'iy intellektda yaratilgan</span></div>
       <div class="stats">
         <div class="stat"><b>40</b><span>taom</span></div>
         <div class="stat"><b>30</b><span>shirinlik</span></div>
@@ -245,7 +248,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
       <a href="https://t.me/SistersCookingBot?start=pay_pp" class="btn btn-red js-buy" data-p="pp">Sotib olish — 75 000 so'm</a>
       <a href="https://t.me/SistersCookingBot?start=pp_site" class="free js-free" data-ch="pp">yoki avval PP sirniki retseptini bepul oling →</a>
     </div>
-    <div class="pay-logos"><span>Payme</span><span>Uzcard</span><span>Humo</span><span>Kartaga o'tkazma</span></div>
+    <div class="pay-logos"><span>Payme</span><span>Click</span><span>Uzcard</span><span>Humo</span></div>
   </div>
 </section>
 
@@ -255,8 +258,8 @@ fbq('init','1410608204369728');fbq('track','PageView');
     <h2 style="margin-top:8px">3 qadam — va kanaldasiz</h2>
     <div class="how">
       <div><b>Bepul retseptni oling</b><span>Botda PP sirniki retsepti to'liq keladi — formatni ko'rib, sinab ko'rasiz.</span></div>
-      <div><b>Payme yoki karta orqali to'lang</b><span>Payme'da 1 daqiqa. Yoki kartaga o'tkazib, chekni botga yuborasiz.</span></div>
-      <div><b>Kanalga havola keladi</b><span>Payme'da — avtomatik, karta orqali — admin tekshirgach. Kanal umrbod sizniki.</span></div>
+      <div><b>Payme yoki Click orqali to'lang</b><span>Uzcard yoki Humo kartangiz bilan 1 daqiqada. Chek yuborish shart emas.</span></div>
+      <div><b>Kanalga havola keladi</b><span>To'lovdan keyin darhol, avtomatik. Kanal umrbod sizniki.</span></div>
     </div>
   </div>
 </section>
@@ -269,7 +272,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
       <details><summary>"Glutensiz" nima degani?</summary><p>Gluten — bug'doy, javdar va arpadagi oqsil. Retseptlarda bug'doy uni, manna, bulg'ur, kuskus va oddiy soya sousi ishlatilmaydi. Ularning o'rniga guruch, grechka, bodom, no'xat, makkajo'xori uni, kraxmal va psillium.</p></details>
       <details><summary>Shakar o'rniga nima ishlatiladi?</summary><p>Shirinliklarda eritrit va/yoki stevia (miqdori aniq yozilgan). Ba'zi shirinliklarda tabiiy meva ham bor: banan, xurmo, olma, rezavor. Taom, salat va nonlarda shakar ham, asal ham yo'q.</p></details>
       <details><summary>Diabetiklarga mosmi?</summary><p>30 ta shirinlikdan 18 tasi 🩺 belgisi bilan — ular faqat eritrit va/yoki stevia bilan shirinlangan, banan, xurmo va mayizsiz. Bu retseptlar davolash vositasi emas; ovqatlanishingiz bo'yicha shifokoringiz bilan maslahatlashing.</p></details>
-      <details><summary>Qanday to'layman?</summary><p>Botda ikki usul bor: Payme (Uzcard yoki Humo karta bilan, havola avtomatik keladi) yoki kartaga o'tkazma (Click, Payme, Uzum yoki bank ilovasidan) — chek skrinshotini botga yuborasiz.</p></details>
+      <details><summary>Qanday to'layman?</summary><p>Botda Payme yoki Click orqali — Uzcard yoki Humo kartangiz bilan 1 daqiqada to'laysiz. Ilova shart emas: karta raqami va SMS kod yetarli. Kanal havolasi botga avtomatik keladi.</p></details>
       <details><summary>Bir marta to'laymanmi yoki har oy?</summary><p>Bir marta — 75 000 so'm. Obuna emas, kanal umrbod sizniki.</p></details>
       <details><summary>Rasmlar haqiqiymi?</summary><p>Retseptlar va masalliqlar haqiqiy, manbalari ko'rsatilgan. Rasmlar esa retsept asosida AI yordamida tayyorlangan illyustratsiyalar — tayyor taom qanday ko'rinishini ko'rsatish uchun.</p></details>
       <details><summary>Savolim bo'lsa kimga yozaman?</summary><p>Botning o'ziga yozing — xabaringiz adminga yetadi va javob beramiz.</p></details>
@@ -299,8 +302,8 @@ fbq('init','1410608204369728');fbq('track','PageView');
 </footer>
 
 <div class="dock" id="dock">
-  <a href="https://t.me/SistersCookingBot?start=pp_site" class="btn btn-ghost js-free" data-ch="pp">🎁 Bepul retsept</a>
-  <a href="https://t.me/SistersCookingBot?start=pay_pp" class="btn btn-red js-buy" data-p="pp">Sotib olish</a>
+  <a href="https://t.me/SistersCookingBot?start=pp_site" class="btn btn-red js-free" data-ch="pp">🎁 Bepul retsept olish</a>
+  <a href="https://t.me/SistersCookingBot?start=pay_pp" class="btn btn-ghost js-buy" data-p="pp">Sotib olish</a>
 </div>
 
 <script>
@@ -314,8 +317,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
     });
   });
   var dock=document.getElementById('dock');
-  var onS=function(){ if(window.scrollY>420) dock.classList.add('on'); else dock.classList.remove('on'); };
-  window.addEventListener('scroll',onS,{passive:true}); onS();
+  dock.classList.add('on'); /* 23-okt: tugma birinchi soniyadan ko'rinadi */
 })();
 </script>
 <script>
