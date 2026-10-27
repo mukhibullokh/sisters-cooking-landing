@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sisters Cooking ilovasi</title>
+<meta name="description" content="Sisters Cooking ilovasi Telegram ichida ochiladi: baraban, uyda bor masalliqdan retsept, ovozli qadamlar.">
+<meta name="theme-color" content="#0e0c0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0c0a;--card:#17140f;--line:#2e271d;--gold:#d4af6a;--text:#f3ece0;--mut:#a99d89}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif}
+.wrap{max-width:440px;margin:0 auto;padding:28px 18px calc(28px + env(safe-area-inset-bottom));min-height:100vh;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.kick{font-size:11px;letter-spacing:3px;font-weight:800;color:var(--gold)}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:40px;line-height:1.05;margin:12px 0 10px}
+p.sub{margin:0 0 22px;color:var(--mut);font-size:15px;line-height:1.5}
+.feat{list-style:none;padding:0;margin:0 0 24px;text-align:left;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.feat li{padding:12px 16px;border-top:1px solid var(--line);font-size:14px;line-height:1.45}
+.feat li:first-child{border-top:none}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:60px;border-radius:18px;background:var(--gold);color:#1a140a;font-weight:800;font-size:17px;text-decoration:none;border:none}
+.btn:active{transform:scale(.98)}
+.alt{display:block;margin-top:14px;color:var(--gold);font-size:14px;font-weight:700;text-decoration:none}
+.help{display:none;margin-top:18px;padding:14px 16px;border-radius:16px;border:1px solid rgba(212,175,106,.3);background:rgba(212,175,106,.07);text-align:left;font-size:13.5px;line-height:1.55;color:var(--text)}
+.help.on{display:block}
+.help a{color:var(--gold);font-weight:700}
+.trust{margin-top:22px;font-size:11.5px;color:var(--mut);line-height:1.5}
+</style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1410608204369728');fbq('track','PageView');
+</script>
+</head>
+<body>
+<main class="wrap">
+  <div class="kick">SISTERS COOKING · ILOVA</div>
+  <h1>Bugun nima pishiraman?</h1>
+  <p class="sub">Ilova Telegram ichida ochiladi — hech narsa o'rnatish shart emas.</p>
+  <ul class="feat">
+    <li>🎡 <b>Baraban</b> — bugungi taomni o'zi tanlab beradi</li>
+    <li>🧺 <b>Uyda bor masalliqdan</b> — borini yozing, mos retseptni topadi</li>
+    <li>🎙 <b>Birga pishiramiz</b> — har qadam ovoz va taymer bilan</li>
+    <li>🎁 Har kanaldan <b>1 ta retsept bepul</b></li>
+  </ul>
+  <a class="btn" id="open" href="https://t.me/SistersCookingBot?startapp=meta">📱 Ilovani ochish</a>
+  <a class="alt" id="bot" href="https://t.me/SistersCookingBot?start=ilova_meta">yoki botda ochish →</a>
+  <div class="help" id="help">
+    Ilova ochilmadimi?<br>
+    1) Yuqori o'ng burchakdagi <b>⋮</b> yoki <b>⋯</b> → <b>«Brauzerda ochish»</b> ni bosing va «Ilovani ochish»ni qayta bosing.<br>
+    2) Telegram o'rnatilmagan bo'lsa: <a id="store" href="https://telegram.org/dl">Telegram'ni yuklab oling</a>, keyin shu sahifaga qayting.<br>
+    3) Retseptlar va narxlarni <a href="./#p-uz">saytda ko'rish</a>.
+  </div>
+  <div class="trust">✅ Retseptlar ishonchli manbalardan olingan.<br>Rasmlar retsept asosida sun'iy intellektda yaratilgan.</div>
+</main>
+<script>
+(function(){
+  var ua=navigator.userAgent||"", android=/Android/i.test(ua), ios=/iPhone|iPad|iPod/i.test(ua);
+  var P="domain=SistersCookingBot&startapp=meta";
+  var tme="https://t.me/SistersCookingBot?startapp=meta";
+  var tg="tg://resolve?"+P;
+  var intent="intent://resolve?"+P+"#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url="+encodeURIComponent(tme)+";end";
+  var open=document.getElementById("open"), help=document.getElementById("help");
+  open.href=android?intent:(ios?tg:tme);
+  if(android) document.getElementById("store").href="https://play.google.com/store/apps/details?id=org.telegram.messenger";
+  if(ios) document.getElementById("store").href="https://apps.apple.com/app/telegram-messenger/id686449807";
+  var hidden=false; document.addEventListener("visibilitychange",function(){ if(document.hidden) hidden=true; });
+  function tryOpen(){ try{ fbq('track','ViewContent',{content_name:'ilova_open'}); }catch(e){}
+    setTimeout(function(){ if(!hidden) help.classList.add("on"); },1800); }
+  open.addEventListener("click",tryOpen);
+  document.getElementById("bot").addEventListener("click",function(){ try{ fbq('track','ViewContent',{content_name:'ilova_bot'}); }catch(e){} });
+  // bir marta avtomatik urinish (ko'p brauzerlar ruxsat beradi; bo'lmasa tugma bor)
+  if(android||ios){ setTimeout(function(){ if(!hidden){ try{ location.href=open.href; }catch(e){} setTimeout(function(){ if(!hidden) help.classList.add("on"); },1800); } },600); }
+})();
+</script>
+</body>
+</html>
