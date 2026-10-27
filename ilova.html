@@ -37,15 +37,15 @@ fbq('init','1410608204369728');fbq('track','PageView');
 <main class="wrap">
   <div class="kick">SISTERS COOKING · ILOVA</div>
   <h1>Bugun nima pishiraman?</h1>
-  <p class="sub">Ilova Telegram ichida ochiladi — hech narsa o'rnatish shart emas.</p>
+  <p class="sub">Ilova Telegram ichida ochiladi — hech narsa o'rnatish shart emas. Telegram'da <b>«📱 Ilovani ochish»</b> tugmasini bosing.</p>
   <ul class="feat">
     <li>🎡 <b>Baraban</b> — bugungi taomni o'zi tanlab beradi</li>
     <li>🧺 <b>Uyda bor masalliqdan</b> — borini yozing, mos retseptni topadi</li>
     <li>🎙 <b>Birga pishiramiz</b> — har qadam ovoz va taymer bilan</li>
     <li>🎁 Har kanaldan <b>1 ta retsept bepul</b></li>
   </ul>
-  <a class="btn" id="open" href="https://t.me/SistersCookingBot?startapp=meta">📱 Ilovani ochish</a>
-  <a class="alt" id="bot" href="https://t.me/SistersCookingBot?start=ilova_meta">yoki botda ochish →</a>
+  <a class="btn" id="open" href="https://t.me/SistersCookingBot?start=ilova_meta">📱 Ilovani ochish</a>
+  <a class="alt" id="bot" href="https://t.me/SistersCookingBot?startapp=meta">yoki ilovani to'g'ridan ochish →</a>
   <div class="help" id="help">
     Ilova ochilmadimi?<br>
     1) Yuqori o'ng burchakdagi <b>⋮</b> yoki <b>⋯</b> → <b>«Brauzerda ochish»</b> ni bosing va «Ilovani ochish»ni qayta bosing.<br>
@@ -57,8 +57,8 @@ fbq('init','1410608204369728');fbq('track','PageView');
 <script>
 (function(){
   var ua=navigator.userAgent||"", android=/Android/i.test(ua), ios=/iPhone|iPad|iPod/i.test(ua);
-  var P="domain=SistersCookingBot&startapp=meta";
-  var tme="https://t.me/SistersCookingBot?startapp=meta";
+  var P="domain=SistersCookingBot&start=ilova_meta";
+  var tme="https://t.me/SistersCookingBot?start=ilova_meta";
   var tg="tg://resolve?"+P;
   var intent="intent://resolve?"+P+"#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url="+encodeURIComponent(tme)+";end";
   var open=document.getElementById("open"), help=document.getElementById("help");
