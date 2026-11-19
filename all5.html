@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sisters Cooking — all5</title>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1410608204369728');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+fbq('track', 'InitiateCheckout', {value: 199000, currency: 'UZS', content_name: 'all5'});
+</script>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+       font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff7f0;color:#3b2a20;text-align:center;padding:24px;box-sizing:border-box}
+  .box{max-width:360px}
+  h1{font-size:22px;margin:0 0 8px}
+  p{font-size:16px;margin:0 0 20px;color:#6b5547}
+  a.btn{display:inline-block;background:#229ED9;color:#fff;text-decoration:none;font-weight:600;
+        padding:14px 22px;border-radius:12px;font-size:17px}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>🎁 5 kanal + Ichimliklar — 600 ta retsept</h1>
+  <p>Telegram ochilmoqda… Agar ochilmasa, tugmani bosing.</p>
+  <a class="btn" id="go" href="https://t.me/SistersCookingBot?start=pay_all5">Telegram'da ochish</a>
+</div>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1410608204369728&ev=Lead&noscript=1"/></noscript>
+<script>
+/* Meta Conversions API uchun: qisqa sid botga uzatiladi, fbc/fbp serverga yuboriladi */
+(function(){
+  var base='https://t.me/SistersCookingBot?start=pay_all5', url=base;
+  try{
+    function ck(n){var m=document.cookie.match('(^|;)\\s*'+n+'=([^;]+)');return m?decodeURIComponent(m[2]):'';}
+    var q=new URLSearchParams(location.search), fc=q.get('fbclid'), fbc0=fc?('fb.1.'+Date.now()+'.'+fc):'';
+    var a='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789',sid='';for(var i=0;i<10;i++)sid+=a[Math.floor(Math.random()*a.length)];
+    url=base+'-s'+sid;
+    document.getElementById('go').setAttribute('href',url);
+    var body=JSON.stringify({sid:sid,fbc:ck('_fbc')||fbc0,fbp:ck('_fbp'),url:location.href});
+    if(navigator.sendBeacon) navigator.sendBeacon('https://sistercooking.onrender.com/fbsid',new Blob([body],{type:'text/plain'}));
+    else fetch('https://sistercooking.onrender.com/fbsid',{method:'POST',body:body,keepalive:true,mode:'no-cors'});
+  }catch(e){}
+  setTimeout(function(){ location.replace(url); }, 900);
+})();
+</script>
+</body>
+</html>
