@@ -283,7 +283,9 @@ fbq('init','1410608204369728');fbq('track','PageView');
       <h1 id="heroTitle" style="margin-top:10px">Qandolatxona darajasidagi shirinliklar — <em>o'z oshxonangizda</em></h1>
       <p class="sub" id="heroSub">Grammigacha aniq o'lchov, harorat va vaqt, har retseptda 5 ta bosqichma-bosqich rasm. Bir marta to'laysiz — kanal umrbod sizniki.</p>
       <div class="cta-stack">
-        <a class="btn btn-red js-buy" data-p="all5" href="https://t.me/SistersCookingBot?start=pay_all5">🎁 5 kanal + 🥤 — 199 000 so'm</a>
+        <a class="btn btn-red js-buy" data-p="main" href="https://t.me/SistersCookingBot?start=shir">🍰 Shirinliklar — 33 000 so'm</a>
+        <a class="btn btn-ghost js-buy" data-p="pp" href="https://t.me/SistersCookingBot?start=pp75">🥗 PP retseptlar — 75 000 so'm</a>
+        <a class="btn btn-ghost js-buy" data-p="all5" href="https://t.me/SistersCookingBot?start=pay_all5">🎁 5 kanal + 🥤 — 199 000 so'm</a>
         <a class="btn btn-ghost js-buy" data-p="ppb" href="https://t.me/SistersCookingBot?start=pay_ppb">🥗 PP to'plami — 119 000 so'm</a>
         <a class="btn btn-ghost js-buy" data-p="cls" href="https://t.me/SistersCookingBot?start=pay_cls">🍰 Klassik to'plam — 99 000 so'm</a>
       </div>
@@ -459,7 +461,9 @@ fbq('init','1410608204369728');fbq('track','PageView');
       <h2>Bugun kechqurun choyga — o'zingiz pishirgan shirinlik</h2>
       <p style="margin:12px auto 22px;max-width:520px">Bir marta to'laysiz — retseptlar umrbod sizniki.</p>
       <div class="cta-stack" style="max-width:420px;margin:0 auto">
-        <a class="btn btn-red js-buy" data-p="all5" href="https://t.me/SistersCookingBot?start=pay_all5">🎁 5 kanal + 🥤 — 199 000 so'm</a>
+        <a class="btn btn-red js-buy" data-p="main" href="https://t.me/SistersCookingBot?start=shir">🍰 Shirinliklar — 33 000 so'm</a>
+        <a class="btn btn-ghost js-buy" data-p="pp" href="https://t.me/SistersCookingBot?start=pp75">🥗 PP retseptlar — 75 000 so'm</a>
+        <a class="btn btn-ghost js-buy" data-p="all5" href="https://t.me/SistersCookingBot?start=pay_all5">🎁 5 kanal + 🥤 — 199 000 so'm</a>
         <a class="btn btn-ghost js-buy" data-p="ppb" href="https://t.me/SistersCookingBot?start=pay_ppb">🥗 PP to'plami — 119 000 so'm</a>
         <a class="btn btn-ghost js-buy" data-p="cls" href="https://t.me/SistersCookingBot?start=pay_cls">🍰 Klassik to'plam — 99 000 so'm</a>
       </div>
@@ -497,7 +501,7 @@ fbq('init','1410608204369728');fbq('track','PageView');
     a.addEventListener('click',function(){
       try{
         fbq('track','Lead');
-        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='all5'?199000:p==='cls'?99000:p==='ppb'?119000:p==='pps'?75000:p==='all4'?159000:p==='all3'?119000:p==='uz'?49000:p==='turk'?39000:p==='pp'?75000:29000,currency:'UZS',content_name:p}); }
+        if(a.classList.contains('js-buy')){ var p=a.getAttribute('data-p'); fbq('track','InitiateCheckout',{value:p==='all5'?199000:p==='cls'?99000:p==='ppb'?119000:p==='pps'?75000:p==='all4'?159000:p==='all3'?119000:p==='uz'?49000:p==='turk'?39000:p==='pp'?75000:33000,currency:'UZS',content_name:p}); }
       }catch(e){}
     });
   });
